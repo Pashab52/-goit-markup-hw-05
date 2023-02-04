@@ -625,5 +625,31 @@ position: absolute;
     border-bottom: 1px solid var(--footer-txt-color);
     border-left: 1px solid var(--footer-txt-color);
     padding: 32px 0 32px 16px;
-
 }
+
+/**
+  |============================
+  | Modal
+  |============================
+*/
+.backdrop {
+    position: absolute;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+    outline: 2px solid red;
+        outline-offset: -2px;
+}
+
+.modal {
+    /* position: absolute; */
+    width: 408px;
+    height: 576px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+.button {}
