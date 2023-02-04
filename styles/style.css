@@ -633,17 +633,17 @@ position: absolute;
   |============================
 */
 .backdrop {
-    position: absolute;
+    position: fixed;
     top: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     outline: 2px solid red;
         outline-offset: -2px;
 }
 
 .modal {
-    /* position: absolute; */
+    position: absolute;
     width: 408px;
     height: 576px;
     background-color: #FCFCFC;
@@ -652,4 +652,6 @@ position: absolute;
     outline-offset: -2px;
 }
 
-.button {}
+.modal-btn {}
+
+.modal-icon{}
