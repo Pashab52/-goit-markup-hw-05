@@ -23,6 +23,9 @@
 --prim-btn-bg-color: #4D5AE5;
 --sec-btn-bg-color: #E7E9FC;
 --hover-btn-bg-color: #404BBF;
+--modal-bg-color: #FCFCFC;
+--backdrop-bg-color: rgba(46, 47, 66, 0.4);
+
 
 
 /* Others */
@@ -632,6 +635,7 @@ position: absolute;
   | Modal
   |============================
 */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -642,8 +646,6 @@ position: absolute;
     transition: opacity 300ms linear, visibility 300ms linear;
 }
 
-
-
 .modal {
     position: absolute;
     top: 50%;
@@ -651,16 +653,14 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     width: 408px;
     height: 576px;
-    background-color: #FCFCFC;
+    background-color: var(--modal-bg-color);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 200ms linear 100ms;
 }
 
 .is-hidden .modal{
-    transform: translate(-50%, -50%) rotate(180deg) scale(0);
-
-    
+    transform: translate(-50%, -65%) rotate(180deg) scale(0);
     
 }
 
@@ -681,8 +681,8 @@ position: absolute;
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: #404BBF;
-    fill: #FFFFFF;
+    background-color: var(--hover-btn-bg-color);
+    fill: var(--light-txt-color);
 }
 
 .is-hidden{
